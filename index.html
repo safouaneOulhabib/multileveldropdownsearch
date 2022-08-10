@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <title>Document</title>
+        <style>
+            .input-container {
+                position: relative;
+            }
+            .spinner-container {
+             position: absolute;
+             right: 10px;
+             top: calc(35% - 10px);
+            }
+            #container-input-city-search {
+            z-index: 1000;
+            width: 81rem;
+            height: 19rem;
+            padding: 1rem;
+            background-color: white;
+            border: solid 10px #eeeded;
+            }
+        .dropdown-container {
+            position: absolute!important;
+             top: calc(25%);
+        }
+        .selected-city-search {
+         cursor: pointer;
+         overflow-y: scroll;
+         height: 15rem;
+
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="my-5 input-container">
+                <input type="text" class="form-control"
+                    id="formGroupExampleInput" placeholder="Search...">
+                <div class="spinner-border text-secondary spinner-container"
+                    role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <div id="container-input-city-search" class="dropdown-container">
+                <div class="row">
+                    <div class="col-12 col-md-4 selected-city-search"><label
+                            class="text-bold font-sm">Liste
+                            des villes</label> <div id="input-city-search"
+                            class="font-sm input-city-search-home">HEYRIEUX (38)</div></div>
+                </div>
+            </div>
+        </div>
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
